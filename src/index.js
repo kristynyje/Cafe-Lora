@@ -32,3 +32,24 @@ orderElm.addEventListener('click', () => {
     ordered = false;
   }
 });
+
+const layers = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+const coffeeLayer = document.querySelector('.drink__info');
+
+layers.forEach((item) => {
+  coffeeLayer.appendChild(Layer(item));
+});
