@@ -1,3 +1,4 @@
+import { Layer } from './Layer/index.js';
 import './style.css';
 
 console.log('funguju!');
